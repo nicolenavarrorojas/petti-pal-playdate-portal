@@ -63,13 +63,13 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Petti
+				// Custom colors for Petti - Updated with new color scheme
 				petti: {
-					primary: '#9b87f5',
-					secondary: '#7E69AB',
-					light: '#E5DEFF',
-					dark: '#1A1F2C',
-					accent: '#D946EF'
+					primary: '#021059', // Dark Blue
+					secondary: '#073491', // Slightly lighter blue
+					light: '#E5F9D8', // Light green tint
+					dark: '#021059', // Dark blue
+					accent: '#73E91E' // Bright Green
 				}
 			},
 			borderRadius: {
