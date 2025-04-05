@@ -28,7 +28,7 @@ const Navbar = () => {
             <Link to="/login" className="text-petti-dark hover:text-petti-primary px-3 py-2 rounded-md font-medium">
               Login
             </Link>
-            <Link to="/register" className="petti-button px-4 py-2 text-white petti-gradient">
+            <Link to="/register" className="petti-button px-4 py-2">
               Register
             </Link>
           </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
               Login
             </Link>
             <Link to="/register" 
-              className="block px-3 py-2 rounded-md text-base font-medium text-white petti-gradient w-full text-center py-3"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-petti-primary w-full text-center py-3 hover:bg-opacity-90"
               onClick={() => setMobileMenuOpen(false)}
             >
               Register

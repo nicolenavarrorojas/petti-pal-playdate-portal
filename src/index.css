@@ -45,7 +45,7 @@
   }
 
   .petti-gradient {
-    @apply bg-gradient-to-r from-petti-primary to-petti-accent;
+    @apply bg-petti-primary;
   }
 
   .petti-card {
@@ -53,7 +53,7 @@
   }
 
   .petti-button {
-    @apply rounded-full font-medium transition-all duration-200 transform hover:scale-105;
+    @apply rounded-full font-medium transition-all duration-200 transform hover:scale-105 bg-petti-primary text-white hover:bg-opacity-90;
   }
 
   .petti-input {
