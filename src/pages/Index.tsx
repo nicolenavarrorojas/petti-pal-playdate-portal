@@ -117,7 +117,7 @@ const Index = () => {
           <div className="mt-8 flex justify-center">
             <a
               href="/register"
-              className="petti-button px-8 py-3 text-petti-primary bg-white font-bold rounded-full shadow-lg"
+              className="petti-button-accent px-8 py-3 text-petti-dark bg-petti-accent font-bold rounded-full shadow-lg"
             >
               Sign Up Now
             </a>

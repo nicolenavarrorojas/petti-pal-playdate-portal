@@ -56,6 +56,10 @@
     @apply rounded-full font-medium transition-all duration-200 transform hover:scale-105 bg-petti-primary text-white hover:bg-opacity-90;
   }
 
+  .petti-button-accent {
+    @apply rounded-full font-medium transition-all duration-200 transform hover:scale-105 bg-petti-accent text-petti-dark hover:bg-opacity-90;
+  }
+
   .petti-input {
     @apply rounded-xl border-2 border-muted px-4 py-2 focus:border-petti-primary focus:ring-1 focus:ring-petti-primary focus:outline-none;
   }
