@@ -14,6 +14,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <PawPrint className="h-8 w-8 text-petti-primary" />
               <span className="ml-2 text-2xl font-bold text-petti-dark">Petti</span>
+              <span className="ml-2 text-sm text-gray-500">Anonymous user</span>
             </Link>
           </div>
           
