@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, PawPrint } from 'lucide-react';
+import { Menu, X, PawPrint, ShieldCheck } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,6 +25,10 @@ const Navbar = () => {
             </Link>
             <Link to="/services" className="text-petti-dark hover:text-petti-primary px-3 py-2 rounded-md font-medium">
               Services
+            </Link>
+            <Link to="/admin" className="text-petti-dark hover:text-petti-primary px-3 py-2 rounded-md font-medium flex items-center">
+              <ShieldCheck className="h-4 w-4 mr-1" />
+              Admin
             </Link>
             <Link to="/login" className="text-petti-dark hover:text-petti-primary px-3 py-2 rounded-md font-medium">
               Login
@@ -65,6 +69,13 @@ const Navbar = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Services
+            </Link>
+            <Link to="/admin" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-petti-dark hover:text-petti-primary flex items-center"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <ShieldCheck className="h-4 w-4 mr-1" />
+              Admin
             </Link>
             <Link to="/login" 
               className="block px-3 py-2 rounded-md text-base font-medium text-petti-dark hover:text-petti-primary"
