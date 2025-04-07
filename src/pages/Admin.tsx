@@ -34,6 +34,8 @@ const Admin = () => {
           description: "Invalid username or password",
           variant: "destructive"
         });
+        // For debugging purposes, log the entered credentials
+        console.log(`Login attempt with username: "${username}" and password: "${password}"`);
       }
       setIsLoading(false);
     }, 1000);
@@ -89,6 +91,9 @@ const Admin = () => {
             <div className="mt-6">
               <p className="text-sm text-center text-gray-500">
                 This area is restricted to site administrators only.
+              </p>
+              <p className="text-xs text-center text-gray-500 mt-2">
+                (Use username: "admin" and password: "admin123")
               </p>
             </div>
           </div>
