@@ -63,13 +63,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Petti - Updated with new color scheme
+				// Enhanced color palette for Petti - Maintaining the same color scheme with more options
 				petti: {
 					primary: '#021059', // Dark Blue
 					secondary: '#073491', // Slightly lighter blue
 					light: '#E5F9D8', // Light green tint
 					dark: '#021059', // Dark blue
-					accent: '#73E91E' // Bright Green
+					accent: '#73E91E', // Bright Green
+					muted: '#F2FCE2', // Very light green
+					gray: '#8E9196', // Medium gray
+					lightgray: '#F1F1F1', // Light gray
+					success: '#48BB78', // Green success
+					error: '#E53E3E', // Red error
+					warning: '#F6AD55', // Orange warning
+					info: '#4299E1' // Blue info
 				}
 			},
 			borderRadius: {
@@ -97,12 +104,23 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 3s ease-in-out infinite'
+				'float': 'float 3s ease-in-out infinite',
+				'fade-in': 'fade-in 0.5s ease-out forwards'
+			},
+			boxShadow: {
+				'card': '0 4px 10px rgba(0, 0, 0, 0.08)',
+				'card-hover': '0 8px 20px rgba(0, 0, 0, 0.12)',
+				'button': '0 4px 6px rgba(0, 0, 0, 0.1)',
+				'button-hover': '0 6px 12px rgba(0, 0, 0, 0.15)'
 			}
 		}
 	},
