@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, PawPrint, ShieldCheck } from 'lucide-react';
+import { Menu, X, PawPrint, ShieldCheck, UserRound } from 'lucide-react';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,10 +36,16 @@ const Navbar = () => {
             <Link to="/register" className="petti-button px-4 py-2">
               Register
             </Link>
+            <button className="flex items-center justify-center w-10 h-10 rounded-full bg-petti-muted hover:bg-petti-light text-petti-primary hover:text-petti-secondary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-petti-accent">
+              <UserRound className="h-5 w-5" />
+            </button>
           </div>
           
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center space-x-2">
+            <button className="flex items-center justify-center w-10 h-10 rounded-full bg-petti-muted hover:bg-petti-light text-petti-primary hover:text-petti-secondary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-petti-accent">
+              <UserRound className="h-5 w-5" />
+            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-petti-dark hover:text-petti-primary focus:outline-none"
